@@ -3,6 +3,8 @@
 
 <head>
   <link href='https://fonts.googleapis.com/css?family=EB Garamond' rel='stylesheet'>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Open+Sans&display=swap"
+    rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -10,61 +12,83 @@
   <h1>Dylan Kendall</h1>
   <div class="container">
     <div class="project-card">
-      <a href="/ebooksmith/" class="link" style="background: none;">
-        <img onload="true" alt="eBookSmith" src="assets/Book.png" loading="lazy" class="link-img">
-      </a>
+      <div class="fire-banner-container">
+        <a href="/ebooksmith/" class="link">
+          <div id="tsparticles-fire"></div>
+          <div class="fire-banner-overlay">
+            <h1 class="ebooksmith-title">eBookSmith</h1>
+          </div>
+        </a>
+      </div>
       <div class="card-text">
-        <p>Testing 1</p>
+        <p>Generate EPUB books using AI with custom prompts and cover images.</p>
       </div>
     </div>
     <div class="project-card">
-      <a href="/ebooksmith/" class="link" style="background: none;">
-        <img onload="true" alt="eBookSmith" src="assets/Book.png" loading="lazy" class="link-img">
+      <a href="/miami-university-seat-finder/" class="link">
+        <img onload="true" alt="MU Seat Finder" src="assets/miami-university-seat-finder.svg" loading="lazy"
+          class="link-img">
       </a>
       <div class="card-text">
-        <p>Testing 1</p>
+        <p>Miami University Seat Finder</p>
       </div>
     </div>
     <div class="project-card">
-      <a href="/ebooksmith/" class="link" style="background: none;">
-        <img onload="true" alt="eBookSmith" src="assets/Book.png" loading="lazy" class="link-img">
+      <a href="/ray-tracer/" class="link">
+        <img onload="true" alt="C++ Ray Tracer" src="assets/ray-tracer.svg" loading="lazy" class="link-img">
       </a>
       <div class="card-text">
-        <p>Testing 1</p>
+        <p>C++ Ray Tracer</p>
       </div>
     </div>
     <div class="project-card">
-      <a href="/ebooksmith/" class="link" style="background: none;">
-        <img onload="true" alt="eBookSmith" src="assets/Book.png" loading="lazy" class="link-img">
+      <a href="/sunder/" class="link">
+        <img onload="true" alt="Sunder" src="assets/sunder.svg" loading="lazy" class="link-img">
       </a>
       <div class="card-text">
-        <p>Testing 1</p>
+        <p>Sunder</p>
       </div>
     </div>
     <div class="project-card">
-      <a href="/ebooksmith/" class="link" style="background: none;">
-        <img onload="true" alt="eBookSmith" src="assets/Book.png" loading="lazy" class="link-img">
+      <a href="/quantum-drift/" class="link">
+        <img onload="true" alt="Quantum Drift Banner" src="assets/quantum-drift-banner.svg" loading="lazy"
+          class="link-img">
       </a>
       <div class="card-text">
-        <p>Testing 1</p>
+        <p>Quantum Drift</p>
       </div>
     </div>
     <div class="project-card">
-      <a href="/ebooksmith/" class="link" style="background: none;">
-        <img onload="true" alt="eBookSmith" src="assets/Book.png" loading="lazy" class="link-img">
+      <a href="/dynamic-l-systems/" class="link">
+        <img onload="true" alt="Dynamic L-Systems" src="assets/dynamic-l-systems-banner.png" loading="lazy"
+          class="link-img">
       </a>
       <div class="card-text">
-        <p>Testing 1</p>
+        <p>Dynamic L-Systems</p>
       </div>
     </div>
-    <div class="project-card">
-      <a href="/ebooksmith/" class="link" style="background: none;">
-        <img onload="true" alt="eBookSmith" src="assets/Book.png" loading="lazy" class="link-img">
-      </a>
-      <div class="card-text">
-        <p>Testing 1</p>
-      </div>
-    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@tsparticles/preset-fire@3/tsparticles.preset.fire.bundle.min.js">
+  </script>
+  <script>
+    (async () => {
+      await loadFirePreset(tsParticles);
+      await tsParticles.load({
+        id: "tsparticles-fire",
+        options: {
+          preset: "fire",
+          fullScreen: {
+            enable: false
+          },
+          background: {
+            color: "#000"
+          }
+        }
+      });
+
+    })();
+  </script>
 </body>
 
 </html>
