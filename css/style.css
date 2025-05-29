@@ -99,7 +99,26 @@ h1 {
     margin-top: 20%;
 }
 
+.ebooksmith-title2 {
+    font-family: 'Cinzel', serif;
+    font-size: 5rem;
+    font-weight: 700;
+    text-shadow: 0 0 14px rgba(255, 102, 0, 1);
+}
+
 .card-text {
     padding-left: 1rem;
     padding-right: 1rem;
+}
+
+.project-description {
+    border-radius: 10px;
+    background-color: rgb(173, 144, 48);
+    z-index: 0;
+    display: flex;
+    justify-content: center;
+    width: 80vw;
+    max-height: auto;
+    margin: auto;
+    padding: 3vw;
 }
